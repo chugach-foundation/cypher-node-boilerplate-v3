@@ -1,0 +1,1 @@
+# Cypher bootstrap for node projects

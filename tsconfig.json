@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "lib": ["es2022"],
+    "module": "commonjs",
+    "target": "es2022",
+    "esModuleInterop": true,
+    "declaration": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@cypher-scraper/config": ["./lib/config"],
+      "@cypher-scraper/config/*": ["./lib/config/*"],
+      "@cypher-scraper/connections": ["./lib/connections"],
+      "@cypher-scraper/connections/*": ["./lib/connections/*"],
+      "@cypher-scraper/fetchers": ["./lib/fetchers"],
+      "@cypher-scraper/fetchers/*": ["./lib/fetchers/*"],
+      "@cypher-scraper/indexers": ["./lib/indexers"],
+      "@cypher-scraper/indexers/*": ["./lib/indexers/*"],
+      "@cypher-scraper/migraters": ["./lib/migraters"],
+      "@cypher-scraper/migraters/*": ["./lib/migraters/*"],
+      "@cypher-scraper/parsers": ["./lib/parsers"],
+      "@cypher-scraper/parsers/*": ["./lib/parsers/*"],
+      "@cypher-scraper/queries": ["./lib/queries"],
+      "@cypher-scraper/queries/*": ["./lib/queries/*"],
+      "@cypher-scraper/queue": ["./lib/queue"],
+      "@cypher-scraper/queue/*": ["./lib/queue/*"],
+      "@cypher-scraper/utils": ["./lib/utils"],
+      "@cypher-scraper/utils/*": ["./lib/utils/*"]
+    }
+  },
+  "include": ["./**/*", "./types.d.ts"],
+  "exclude": ["node_modules", "dist", "scripts", "tests"]
+}
